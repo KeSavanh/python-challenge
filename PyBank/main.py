@@ -19,7 +19,7 @@ with open(budget_path, 'r') as budget:
 # Count numbers of months
         total_month = len(date)
 # calculate total of profit/losses
-        total_budget = sum(profit_losses)
+        total_budget = round(sum(profit_losses))
 # loop through row[1] then calculate the changes between rows
     for x in range(1, len(profit_losses)):
         changes =(profit_losses[x] - profit_losses[x-1])
